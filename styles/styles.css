@@ -22,8 +22,8 @@ a {
 }
 
 ul {
-		margin: 0;
-		padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 ul li {
@@ -286,22 +286,28 @@ input[type=button] {
 /* 
 --------- OPTIONS ---------- */
 
-.options ul li {
-	border: 1px solid red;
-	width: 25%;
-	float: left;
-	list-style: none;
-	text-align: center;
-	padding: 5%;
+.options {
+	padding: 100px 0;
+}
 
+
+.options ul li {
+	width: calc(90% / 4);
+	margin-right: 3%;
+	float: left;
+	text-align: center;
+}
+
+.options ul li:nth-of-type(4) {
+	margin-right: 0;
 }
 
 i {
 	width: 100%;
-	font-size: 62px;
+	font-size: 40px;
+	padding-bottom: 23.5px;
 }
 
 .options a {
-	display: block;
-	background: teal;
+	display: inline-block;
 }
