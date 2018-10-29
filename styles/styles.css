@@ -282,3 +282,26 @@ input[type=button] {
 	left: -100%;
 	top: 0;
 }
+
+/* 
+--------- OPTIONS ---------- */
+
+.options ul li {
+	border: 1px solid red;
+	width: 25%;
+	float: left;
+	list-style: none;
+	text-align: center;
+	padding: 5%;
+
+}
+
+i {
+	width: 100%;
+	font-size: 62px;
+}
+
+.options a {
+	display: block;
+	background: teal;
+}
