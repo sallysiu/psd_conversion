@@ -308,7 +308,7 @@ footer {
 }
 
 footer .wrapper {
-	/* padding: 100px 0; */
+	padding: 100px 0;
 }
 
 footer p {
@@ -384,34 +384,15 @@ footer div:last-of-type {
 /* RESPONSIVE DESIGN */
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 1024px) {
 	footer {
 		background: #003366;
-	}
-
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-
+	/* }
 	footer {
-		background: #134E13;
-	}
-
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-	/* .wrapper {
-		width: 90%;
-		margin: 0 auto;
-	} */
-
-	footer {
-		background: #232323;
+		background: #232323; */
 		/* padding-top: 50px; */
-		text-align: center;
-	}
+		/* text-align: center; */
+	}	/*
 
 	/* footer section {
 		margin: 100px 0 0 0;
@@ -430,12 +411,8 @@ footer div:last-of-type {
 	} */
 
 
-	footer .pages {
-		text-align: center;
-	}
-
 	.subscribe {
-		width: 100%;
+		width: 70%;
 		/* background: darkgreen; */
 		/* position: absolute; */
 		/* clear: both; */
@@ -443,14 +420,9 @@ footer div:last-of-type {
 		/* left: 0; */
 		/* margin-bottom: 250px; */
 		/* padding-bottom: 250px; */
-		margin-bottom: 30px;
+		margin: 0 15% 30px 15%;
 	}
 
-	.subscribe input[type="email"],
-	.subscribe input[type="submit"] {
-		width: 100%;
-		text-align: center;
-	}
 
 	.contact {
 		/* background: midnightblue; */
@@ -468,6 +440,55 @@ footer div:last-of-type {
 		right: 0; */
 		/* margin-top: 20px; */
 		margin-left: 50%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	footer {
+		background: #134E13;
+		text-align: center;
+	}
+
+	footer .subscribe {
+		
+	}
+
+	footer .pages {
+		text-align: center;
+	}
+
+
+
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.subscribe input[type="email"],
+	.subscribe input[type="submit"] {
+		width: 100%;
+		text-align: center;
 	}
 
 }
