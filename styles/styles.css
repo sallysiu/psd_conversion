@@ -48,6 +48,7 @@ img{
 	margin: 0 auto;
 	width: 80%;
 	max-width: 1280px;
+	/* border: 2px solid white; */
 }
 
 
@@ -375,11 +376,10 @@ footer .pages {
 
 footer div:last-of-type {
 	background: #000;
-	background: blue;
 	color: #fcfcfc;
+	text-align: center;
+	padding: 5px;
 }
-
-
 
 /* RESPONSIVE DESIGN */
 
@@ -408,8 +408,8 @@ footer div:last-of-type {
 	} */
 
 	footer {
-		background: #000;
-		/* padding: 50px 0; */
+		background: #232323;
+		/* padding-top: 50px; */
 		text-align: center;
 	}
 
@@ -419,10 +419,15 @@ footer div:last-of-type {
 
 	footer .wrapper {
 		position: relative;
-		border: 3px dashed wheat;
-		margin: 50px 0;
+		/* border: 3px dashed wheat; */
+		/* margin: 50px auto; */
+		padding: 50px 0;
 		/* height: 300px; */
 	}
+
+	/* footer div:first-of-type {
+		margin: 50px;
+	} */
 
 
 	footer .pages {
@@ -448,15 +453,15 @@ footer div:last-of-type {
 	}
 
 	.contact {
-		background: midnightblue;
+		/* background: midnightblue; */
 		width: 50%;
 		position: absolute;
-		bottom: 0;
+		bottom: 50px;
 		left: 0;
 		/* margin-top: 200px; */
 	}
 	.pages {
-		background: darkred;
+		/* background: darkred; */
 		width: 50%;
 		/* position: absolute; */
 		/* bottom: 0;
