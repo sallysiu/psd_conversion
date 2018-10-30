@@ -385,78 +385,27 @@ footer div:last-of-type {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 1024px) {
-	footer {
-		background: #003366;
-	/* }
-	footer {
-		background: #232323; */
-		/* padding-top: 50px; */
-		/* text-align: center; */
-	}	/*
-
-	/* footer section {
-		margin: 100px 0 0 0;
-	} */
-
 	footer .wrapper {
 		position: relative;
-		/* border: 3px dashed wheat; */
-		/* margin: 50px auto; */
 		padding: 50px 0;
-		/* height: 300px; */
 	}
 
-	/* footer div:first-of-type {
-		margin: 50px;
-	} */
-
-
 	.subscribe {
-		width: 70%;
-		/* background: darkgreen; */
-		/* position: absolute; */
-		/* clear: both; */
-		/* top: 0; */
-		/* left: 0; */
-		/* margin-bottom: 250px; */
-		/* padding-bottom: 250px; */
-		margin: 0 15% 30px 15%;
+		width: 75%;
+		margin: 0 17.5% 30px 17.5%;
 	}
 
 
 	.contact {
-		/* background: midnightblue; */
 		width: 50%;
 		position: absolute;
 		bottom: 50px;
 		left: 0;
-		/* margin-top: 200px; */
 	}
 	.pages {
-		/* background: darkred; */
 		width: 50%;
-		/* position: absolute; */
-		/* bottom: 0;
-		right: 0; */
-		/* margin-top: 20px; */
 		margin-left: 50%;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -464,14 +413,19 @@ footer div:last-of-type {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+	.wrapper {
+		margin: 0 auto;
+		width: 90%;
+	}
+
 
 	footer {
-		background: #134E13;
 		text-align: center;
 	}
 
-	footer .subscribe {
-		
+	.subscribe {
+		width: 90%;
+		margin: 0 5% 30px 5%;
 	}
 
 	footer .pages {
@@ -484,7 +438,7 @@ footer div:last-of-type {
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 	.subscribe input[type="email"],
 	.subscribe input[type="submit"] {
 		width: 100%;
@@ -492,3 +446,27 @@ footer div:last-of-type {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
