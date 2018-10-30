@@ -393,20 +393,19 @@ footer div:last-of-type {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
 	footer {
 		background: #134E13;
-
 	}
 
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-
-	.wrapper {
+	/* .wrapper {
 		width: 90%;
-	}
-
+		margin: 0 auto;
+	} */
 
 	footer {
 		background: #000;
@@ -432,7 +431,7 @@ footer div:last-of-type {
 
 	.subscribe {
 		width: 100%;
-		background: darkgreen;
+		/* background: darkgreen; */
 		/* position: absolute; */
 		/* clear: both; */
 		/* top: 0; */
@@ -440,6 +439,12 @@ footer div:last-of-type {
 		/* margin-bottom: 250px; */
 		/* padding-bottom: 250px; */
 		margin-bottom: 30px;
+	}
+
+	.subscribe input[type="email"],
+	.subscribe input[type="submit"] {
+		width: 100%;
+		text-align: center;
 	}
 
 	.contact {
