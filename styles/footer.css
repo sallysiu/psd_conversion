@@ -1,0 +1,55 @@
+.doom {
+	background: midnightblue;
+	color: whitesmoke;
+	padding: 100px 0;
+}
+
+.footer {
+	border-bottom: 1px solid wheat;
+	font-size: 15px;
+	text-align: center;
+	direction: rtl;
+}
+
+.footer a {
+  color: #bebebe;
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #fff;
+}
+
+.footer__nav,
+.footer__copy,
+.footer__author {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.footer__content {
+  display: inline-block;
+}
+
+.footer__nav,
+.footer__content {
+  direction: ltr;
+}
+
+.footer__copy,
+.footer__author {
+  margin: 0;
+}
+
+.footer__nav ul {
+  margin: 0 -10px;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
