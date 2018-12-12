@@ -343,43 +343,6 @@ span {
 .options a {
   display: inline-block; }
 
-/* BEHIND THE LENS */
-.behindLens {
-  padding: 100px 0; }
-
-.behindLens div img {
-  display: block;
-  float: left;
-  width: 30%; }
-
-.behindLens .wrapper div {
-  width: 70%;
-  float: left;
-  padding-left: 42px; }
-
-/* BLOG POSTS */
-.natureScenery, .candidPhoto {
-  clear: both;
-  width: 100%; }
-
-.natureScenery div img, .candidPhoto div img {
-  display: block;
-  width: 50%;
-  float: right; }
-
-.natureScenery .blogpost, .candidPhoto .blogpost {
-  background: #f0f5ff;
-  width: 50%;
-  padding: 100px 148px 100px 12.5%;
-  text-align: right; }
-
-.candidPhoto div img {
-  float: left; }
-
-.candidPhoto .blogpost {
-  text-align: left;
-  float: right; }
-
 /* FOOTER */
 footer {
   clear: both;
@@ -569,6 +532,43 @@ footer p {
     margin-bottom: 0; }
   .behindLens div img {
     width: 100%; } }
+
+/* BEHIND THE LENS */
+.behindLens {
+  padding: 100px 0; }
+
+.behindLens div img {
+  display: block;
+  float: left;
+  width: 30%; }
+
+.behindLens .wrapper div {
+  width: 70%;
+  float: left;
+  padding-left: 42px; }
+
+/* BLOG POSTS */
+.natureScenery, .candidPhoto {
+  clear: both;
+  width: 100%; }
+
+.natureScenery div img, .candidPhoto div img {
+  display: block;
+  width: 50%;
+  float: right; }
+
+.natureScenery .blogpost, .candidPhoto .blogpost {
+  background: #f0f5ff;
+  width: 50%;
+  padding: 100px 148px 100px 12.5%;
+  text-align: right; }
+
+.candidPhoto div img {
+  float: left; }
+
+.candidPhoto .blogpost {
+  text-align: left;
+  float: right; }
 
 .doom {
   background: midnightblue;
