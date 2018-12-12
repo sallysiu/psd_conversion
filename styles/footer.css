@@ -1,55 +1,121 @@
-.doom {
-	background: midnightblue;
-	color: whitesmoke;
-	padding: 100px 0;
+
+
+
+/* 
+-------------- NOTES
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1024px) {
+	/* footer {
+		background: #003366;
+	 }
+	footer {
+		background: #232323; */
+		/* padding-top: 50px; */
+		/* text-align: center; */
+
+	/* footer section {
+		margin: 100px 0 0 0;
+	} */
+
+	footer .wrapper {
+		position: relative;
+		border: 3px dashed wheat;
+		/* margin: 50px auto; */
+		padding: 50px 0;
+		/* height: 300px; */
+	}
+
+	/* footer div:first-of-type {
+		margin: 50px;
+	} */
+
+
+	.subscribe {
+		width: 75%;
+		/* background: darkgreen; */
+		/* position: absolute; */
+		/* clear: both; */
+		/* top: 0; */
+		/* left: 0; */
+		/* margin-bottom: 250px; */
+		/* padding-bottom: 250px; */
+		margin: 0 17.5% 30px 17.5%;
+		/* margin: 0 10% 30px 10%; */
+	}
+
+
+	.contact {
+		/* background: midnightblue; */
+		width: 50%;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		/* margin-top: 200px; */
+	}
+	.pages {
+		/* background: darkred; */
+		width: 50%;
+		/* position: absolute; */
+		/* bottom: 0;
+		right: 0; */
+		/* margin-top: 20px; */
+		margin-left: 50%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.wrapper {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+
+	footer {
+		text-align: center;
+	}
+
+	.subscribe {
+		width: 90%;
+		margin: 0 5% 30px 5%;
+	}
+
+	footer .pages {
+		text-align: center;
+	}
+
+
+
+
 }
 
-.footer {
-	border-bottom: 1px solid wheat;
-	font-size: 15px;
-	text-align: center;
-	direction: rtl;
-}
+/* Landscape phones and down */
+@media (max-width: 580px) {
+	.subscribe input[type="email"],
+	.subscribe input[type="submit"] {
+		width: 100%;
+		text-align: center;
+	}
 
-.footer a {
-  color: #bebebe;
-  text-decoration: none;
-  transition: color .2s ease-in-out;
-}
-
-.footer a:hover,
-.footer a:focus {
-  color: #fff;
-}
-
-.footer__nav,
-.footer__copy,
-.footer__author {
-  display: inline-block;
-  padding: 10px 20px;
-}
-
-.footer__content {
-  display: inline-block;
-}
-
-.footer__nav,
-.footer__content {
-  direction: ltr;
-}
-
-.footer__copy,
-.footer__author {
-  margin: 0;
-}
-
-.footer__nav ul {
-  margin: 0 -10px;
-  padding: 0;
-  list-style: none;
-}
-
-.footer__nav ul li {
-  display: inline-block;
-  padding: 0 10px;
-}
+} 
