@@ -13,40 +13,57 @@
 </head>
 <body>
     <header class="clearfix">
-        <div class="header-top wrapper clearfix">
+        <div class="wrapper clearfix">
             <h2 class="logo">
                 <a href="#">Shutter</a>
             </h2>
             <nav>
-                <ul>
+                <i class="fas fa-bars smallScreen"></i>
+                <ul class="largeScreen">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
+            <div class="socialMedia largeScreen">
+                <nav>
+                    <ul>
+                        <li><a href="http://"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="http://"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="http://"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <h1>Welcome to <span>Shutter</span></h1>
     </header>
 
     <main>
-        <section class="about clearfix">
-            <div class="wrapper">
+        <!-- about section   starts here -->
+        <section class="about">
+            <div class="wrapper clearfix">
                 <h2>About Shutter</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis deleniti dolores repellat beatae eius vitae modi fuga a, ad velit iusto temporibus sequi eaque assumenda ipsa autem esse repellendus!</p>
-                <input type="button" value="Find out more">
+                <a href="#" class="findMore">Find out more</a>
             </div>
-
         </section>
-        <section class="photos clearfix">
-            <div class="wrapper">
+        <!-- about section ends here -->
+
+        <!-- photo gallery starts here -->
+        <section class="gallery ">
+            <div class="wrapper clearfix">
                 <ul>
                     <li><img src="assets/image-2.jpg" alt=""></li>
                     <li><img src="assets/image-3.jpg" alt=""></li>
-                    <li><img src="assets/image-4.jpg" alt=""></li>
+                    <li><img src="assets/image-4.jpg" alt="" class="largeScreen"></li>
                 </ul>
             </div>
         </section>
+        <!-- photo gallery ends here -->
+
+        <!-- alternate website directory starts here -->
         <section class="options">
             <div class="wrapper clearfix">
                 <ul>
@@ -63,40 +80,64 @@
                         <i class="fas fa-envelope"></i>
                         <h3>Contact</h3></a></li>
                 </ul>
-            </div>  <!-- end wrapper -->
+            </div> 
         </section>
-        <section class="behind-the-lens">
-            <div class="wrapper">
+        <!-- alternate website directory ends here -->
+   
+        <!-- behind the lens starts here -->
+        <section class="behindLens">
+            <div class="wrapper clearfix">
                 <img src="assets/image-6.jpg" alt="">
                 <div>
                     <h2>Behind the Lens</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla el. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend.</p>
-                    <input type="button" value="Find out more">
+                    <a href="#" class="findMore">Find out more</a>
                 </div>
             </div>
         </section>
-        <section class="nature-scenery">
+        <!-- behind the lens ends here -->
+
+        <!-- blogposts starts here -->
+        <section class="natureScenery">
             <div>
+                <img src="assets/image-7.jpg" alt="">
+            </div>
+            <div class="blogpost">
                 <h3>Nature & Scenery</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
-                consequat vestibulum.</p>
-                <input type="button" value="Read more">
+                    consequat vestibulum.</p>
+                <a href="#" class="findMore">Read more</a>
             </div>
         </section>
-        <section class="candid-photo">
+        <section class="candidPhoto">
             <div>
+                <img src="assets/image-8.jpg" alt="">
+            </div>
+            <div class="blogpost">
                 <h3>Candid Photography</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum
                 consequat vestibulum.</p>
-                <input type="button" value="Read more">
+                <a href="#" class="findMore">Read more</a>
             </div>
         </section>
+        <!-- blogposts end here -->
 
     </main>
 
-    <footer class="">
+    <footer>
         <div class="wrapper clearfix">
-            <section class="contact">
+            <div class="subscribe smallScreen">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter to stay updated.</p>
+                <form action="" method="POST" name="email-subscription">
+                    <label for="email" class="visuallyhidden">
+                        <p>Enter your email address</p>
+                    </label>
+                    <input type="email" name="email address" placeholder="Email address">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="contact">
                 <h4>Contact</h4>
                 <ul>
                     <li>
@@ -112,17 +153,17 @@
                         <p>Toronto, ON</p>
                     </li>
                 </ul>
-            </section>
-            <section class="subscribe">
+            </div>
+            <div class="subscribe largeScreen">
                 <h4>Stay Updated</h4>
                 <p>Subscribe to our newsletter to stay updated.</p>
-                <form action="http://www.focuspocus.io/magic/e783bd75abd7f9af6e276c159e2bdc7c" method="POST" name="email-subscription">
+                <form action="" method="POST" name="email-subscription">
                     <label for="email" class="visuallyhidden"><p>Enter your email address</p></label>
-                    <input type="email" name="email address" value="Email address">
+                    <input type="email" name="email address" placeholder="Email address">
                     <input type="submit" value="Subscribe">
                 </form>
-            </section>
-            <section class="pages">
+            </div>
+            <div class="pages">
                 <h4>Pages</h4>
                 <ul>
                     <li><p>Home</p></li>
@@ -131,13 +172,12 @@
                     <li><p>Contact</p></li>
                 </ul>
 
-            </section>
+            </div>
         </div>
-        <div class="">
+        <div class="copyright">
             <p>Copyright &copy; 2018 HackerYou</p>
         </div>
     </footer>
-
 
 </body>
 </html>
