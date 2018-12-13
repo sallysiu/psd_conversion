@@ -17,7 +17,9 @@ a {
 
 a:hover {
 	color: #fcfcfc;
-	text-decoration: underline;
+	border-bottom: 2px solid white;
+	// text-decoration: underline;
+	// border: 2px solid blue;
 }
 
 ul {
@@ -50,7 +52,6 @@ h1 {
 	text-transform: uppercase;
 	text-align: center;
 	color: #fcfcfc;
-	padding-top: 40vh;
 }
 
 h2, h3 {

@@ -22,14 +22,14 @@
 					padding: 0 0 10px 0;
 				}
 
-				&--words {
-					border: 1px  blue;
-					padding: 10px 0;
-				}
+				// &--words {
+					// border: 1px solid  blue;
+					// padding: 0;
+				// }
 			}
 
 			&__comments {
-
+				text-align: left;
 				margin-top: 50px; // to help separate comments from the blog post
 
 				&-box {
@@ -47,13 +47,22 @@
 				}
 				&--text {
 					flex: 0 1 auto;
+					margin: 0;
 					margin-left: 20px;
 					width: 80%;
+
+					p:first-of-type {
+						margin: 0 0 20px 0;
+					}
+
+					p {
+						margin: 0;
+					}
 				}
 			}
 
 			.border {
-				border-bottom: 10px solid purple; // #e7a8e6;
+				border-bottom: 10px solid purple;
 
 			}
 

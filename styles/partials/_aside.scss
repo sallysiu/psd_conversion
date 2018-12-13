@@ -60,25 +60,34 @@
 	
 		.email {
 		font-weight: bold;
-		}	
+		}
+		p {
+			margin: 5px 0;
+			line-height: 28px;
+			padding: 0;
+		}		
+
 	}
 }
 
 .contact-info {
+	// align-self: center;
 	list-style: none;
 	padding: 0;
+	margin-bottom: 20px;
 	&--li {
 		display: inline-block;
 		margin-right: 15px;
 		font-size: 40px;
+
 	}
+
 	.icon {
-		// color: #345231; // grey green
-		color: purple;
+		color: indigo;
 		
 		&:hover {
-		// color: #e4a436; // contrast color
 		color: rgb(255, 118, 253);
+		// color: #e7a8e6;
 		}
 	}
 
