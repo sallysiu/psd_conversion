@@ -1,0 +1,107 @@
+
+
+header {
+	background-size: cover;
+	color: #fcfcfc;
+	font-family: 'Lato', sans-serif;
+	padding-top: 20px;
+
+	
+	&.main {
+		background: url(../../assets/image-1.jpg) no-repeat;
+		height: 100vh;
+
+	}
+
+	&.blog,
+	&.contact {
+		background: url(../../assets/kelly-sikkema-250500-unsplash.jpg) right;
+		background-size: cover;
+		height: 50vh;
+		position: relative;
+		
+		.landing-title {
+			font-family: 'Playfair Display', serif;
+			padding: 0;
+			position: absolute;
+			bottom: 0;
+			margin: 0;
+			text-align: left;
+			left: 10%;
+			// border: 2px solid white;
+			font-size: 80px;
+			// line-height: 60px;
+			letter-spacing: 1px;
+		}
+	}
+
+}
+
+
+header h2 {
+	float: left;
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #fcfcfc;
+	font-size: 42px;
+	line-height: 63px;
+	// border: 2px solid red;
+	
+}
+
+header .logo {
+	text-transform: none;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 35px;
+	// border: 2px solid red;
+
+}
+
+nav ul {
+	float: right;
+}
+
+header nav i.smallScreen {
+	float: right;
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	width: 50px;
+	display: none;
+}
+
+
+.socialMedia nav ul {
+	list-style: none;
+	position: absolute;
+	top: 40vh;
+	right: -100px;
+	width: 100px;
+}
+
+.socialMedia nav ul li {
+	font-size: 20px;
+	text-decoration: none;
+	height: 25px;
+	margin-bottom: 15px;
+}
+
+
+span {
+	font-family: 'Playfair Display', serif;
+	font-size: 130px;
+	display: block;
+	text-transform: none;
+	padding: 0;
+	line-height: 0.7;
+}
+
+
+

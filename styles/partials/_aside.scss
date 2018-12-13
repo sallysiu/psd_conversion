@@ -1,0 +1,86 @@
+// Aside section for Blog and Contact pages
+
+.aside {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+
+	&__about {
+		padding: 20px;
+		background: white;
+		margin-bottom: 20px;
+
+		&--link {
+			color:#709b6b; // grey green
+			font-weight: bolder;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__recent-posts {
+		padding: 20px;
+		background: white;
+
+		&--list {
+			font-family: 'Monserrat', sans-serif;
+			padding: 0;
+			margin: 0;
+			font-size: 20px;
+			line-height: 32px;
+			list-style: none;
+
+			&--item:before {
+				content: "\0387";
+				padding: 0 10px;
+				display: inline;
+			
+			}
+
+		}
+		&--link {
+			color: black;
+
+			&:hover  {
+				text-decoration: underline;
+			}
+		}
+
+
+	}
+
+
+	&.contact {
+		background: white;
+		padding: 20px;
+		margin: 0;
+		height: 280px;
+	
+		.email {
+		font-weight: bold;
+		}	
+	}
+}
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	&--li {
+		display: inline-block;
+		margin-right: 15px;
+		font-size: 40px;
+	}
+	.icon {
+		// color: #345231; // grey green
+		color: purple;
+		
+		&:hover {
+		// color: #e4a436; // contrast color
+		color: rgb(255, 118, 253);
+		}
+	}
+
+}
+	

@@ -1,52 +1,70 @@
+.main-blog,
+.main-contact {
+	background: #f0f5ff; //background: #f0f5ff;
 
-/* BEHIND THE LENS */
+	.wrapper {
+		padding: 80px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+	
+		.blogpost,
+		.contact-form {
+			flex: 0 1 auto;
+			width: 65%;
+			
+			&__content {
+				background: white;
+				padding: 20px;
+	
+				&--author {
+					padding: 0 0 10px 0;
+				}
 
-.behindLens {
-	padding: 100px 0;
+				&--words {
+					border: 1px  blue;
+					padding: 10px 0;
+				}
+			}
+
+			&__comments {
+
+				margin-top: 50px; // to help separate comments from the blog post
+
+				&-box {
+					background: white;
+					padding: 20px;
+					margin: 30px 0;
+					display: flex;
+					flex-wrap: no-wrap;
+					justify-content: space-between;
+					align-items: flex-start;
+				}
+				&--photo {
+					flex: 0 1 auto;
+					width: 20%;
+				}
+				&--text {
+					flex: 0 1 auto;
+					margin-left: 20px;
+					width: 80%;
+				}
+			}
+
+			.border {
+				border-bottom: 10px solid purple; // #e7a8e6;
+
+			}
+
+		}
+
+		.aside {
+			flex: 0 1 auto;
+			order: -1;
+		}
+		
+	}
+
+	
 }
-
-.behindLens div img {
-	display: block;
-	float: left;
-	width: 30%;
-}
-
-.behindLens .wrapper div {
-	width: 70%;
-	float: left;
-	padding-left: 42px;
-}
-
-
-
-/* BLOG POSTS */
-
-.natureScenery, .candidPhoto {
-	clear: both;
-	width: 100%;
-}
-
-.natureScenery div img, .candidPhoto div img {
-	display: block;
-	width: 50%;
-	float: right;
-}
-
-.natureScenery .blogpost, .candidPhoto .blogpost {
-	background: #f0f5ff;
-	width: 50%;
-	padding: 100px 148px 100px 12.5%;
-	text-align: right;
-}
-
-.candidPhoto div img {
-	float: left;
-}
-
-.candidPhoto .blogpost {
-	text-align: left;
-	float: right;
-}
-
-
-

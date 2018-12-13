@@ -1,0 +1,48 @@
+.form {
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-start;
+	flex-direction: wrap;
+	flex-wrap: wrap;
+
+	&__input {
+		flex: 0 1 auto;
+		width: calc((100% - 20px) / 2);
+		width: 48%;
+
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none;
+		margin: 15px 0;
+		padding: 20px;
+		font-size: 20px;
+		line-height: 32px;
+
+		&--textbox {
+			border: none;
+			width: 100%;
+			margin: 15px 0;
+			padding: 20px;
+			font-size: 20px;
+			line-height: 32px;
+			resize: none;
+		}
+
+		&--button {
+			width: 100%;
+			background: #e7a8e6;
+			border: none;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: 'Abril Fatface', serif;
+			font-size: 20px;
+			line-height: 29px;
+			letter-spacing: 1px;
+			margin: 15px 0;
+			padding: 10px;
+		}
+
+
+	}
+}
