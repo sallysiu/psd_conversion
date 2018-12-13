@@ -233,69 +233,6 @@ input {
   height: 50px;
   border: none; }
 
-/* FOOTER */
-footer {
-  clear: both;
-  background: #232323;
-  color: #fcfcfc; }
-
-footer .wrapper {
-  padding: 100px 0; }
-
-footer p {
-  margin: 0;
-  padding: 0;
-  line-height: 29px; }
-
-footer .contact,
-.subscribe,
-.pages {
-  float: left; }
-
-.subscribe.smallScreen {
-  margin: 0 0 30px 0;
-  width: 100%;
-  display: none; }
-
-.subscribe {
-  width: 50%;
-  text-align: center; }
-
-.subscribe input {
-  float: left;
-  margin: 15px 0 0 0; }
-
-.subscribe input[type="email"] {
-  width: 70%;
-  text-align: left;
-  color: #232323;
-  padding: 0 10px; }
-
-.subscribe input[type="submit"] {
-  width: 30%;
-  text-transform: uppercase;
-  background: #e7a8e6;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 29px;
-  text-align: center; }
-
-.subscribe.smallScreen input {
-  width: 100%;
-  text-align: center; }
-
-.pages {
-  margin-right: 0;
-  text-align: right; }
-
-.copyright {
-  background: #000;
-  color: #fcfcfc;
-  text-align: center;
-  padding: 5px;
-  margin: 0; }
-
 header {
   background-size: cover;
   color: #fcfcfc;
@@ -338,8 +275,6 @@ header {
       padding: 0;
       position: absolute;
       bottom: 0;
-      margin: 0;
-      text-align: left;
       left: 10%;
       font-size: 100px;
       line-height: 100px;
@@ -360,10 +295,6 @@ nav ul li {
   font-weight: bold;
   font-size: 18px;
   margin-left: 35px; }
-  nav ul li a {
-    padding: 0 10px 0 10px; }
-    nav ul li a.active, nav ul li a:focus {
-      border-bottom: 2px solid white; }
 
 .main-nav {
   -webkit-box-flex: 0;
@@ -380,6 +311,15 @@ nav ul li {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
+    .main-nav nav a {
+      padding: 0 10px 0 10px; }
+      .main-nav nav a.active, .main-nav nav a:hover, .main-nav nav a:focus {
+        border-bottom: 3px solid white; }
+
+.pages li {
+  font-weight: normal; }
+  .pages li a:hover, .pages li a:focus {
+    border-bottom: 3px solid white; }
 
 header nav i.smallScreen {
   padding: 0;
@@ -714,50 +654,67 @@ header nav i.smallScreen {
         background: purple;
         color: white; }
 
-.doom {
-  background: midnightblue;
-  color: whitesmoke;
-  padding: 100px 0; }
+/* FOOTER */
+footer {
+  clear: both;
+  background: #232323;
+  color: #fcfcfc; }
+  footer div.wrapper {
+    padding: 100px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
 
-.footer {
-  border-bottom: 1px solid wheat;
-  font-size: 15px;
-  text-align: center;
-  direction: rtl; }
-
-.footer a {
-  color: #bebebe;
-  text-decoration: none;
-  -webkit-transition: color .2s ease-in-out;
-  -o-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out; }
-
-.footer a:hover,
-.footer a:focus {
-  color: #fff; }
-
-.footer__nav,
-.footer__copy,
-.footer__author {
-  display: inline-block;
-  padding: 10px 20px; }
-
-.footer__content {
-  display: inline-block; }
-
-.footer__nav,
-.footer__content {
-  direction: ltr; }
-
-.footer__copy,
-.footer__author {
-  margin: 0; }
-
-.footer__nav ul {
-  margin: 0 -10px;
+footer p {
+  margin: 0;
   padding: 0;
-  list-style: none; }
+  line-height: 29px; }
 
-.footer__nav ul li {
-  display: inline-block;
+footer .contact,
+.subscribe,
+.pages {
+  width: 15%; }
+
+.subscribe.smallScreen {
+  margin: 0 0 30px 0;
+  width: 100%;
+  display: none; }
+
+.subscribe {
+  width: 70%;
+  text-align: center; }
+
+.subscribe input {
+  margin: 15px 0 0 0; }
+
+.subscribe input[type="email"] {
+  width: 65%;
+  text-align: left;
+  color: #232323;
   padding: 0 10px; }
+
+.subscribe input[type="submit"] {
+  width: 30%;
+  text-transform: uppercase;
+  background: #e7a8e6;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center; }
+
+.subscribe.smallScreen input {
+  width: 100%;
+  text-align: center; }
+
+.pages {
+  text-align: right; }
+
+.copyright {
+  background: #000;
+  color: #fcfcfc;
+  text-align: center;
+  padding: 5px;
+  margin: 0; }

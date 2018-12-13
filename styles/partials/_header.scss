@@ -47,9 +47,6 @@ header {
 	&.main {
 		background: url(../../assets/image-1.jpg) no-repeat;
 		height: 100vh;
-
-
-
 	}
 
 	&.blog,
@@ -64,10 +61,7 @@ header {
 			padding: 0;
 			position: absolute;
 			bottom: 0;
-			margin: 0;
-			text-align: left;
 			left: 10%;
-			// border: 2px solid white;
 			font-size: 100px;
 			line-height: 100px;
 			letter-spacing: 1px;
