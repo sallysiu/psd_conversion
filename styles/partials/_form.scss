@@ -14,10 +14,11 @@
 		-webkit-appearance: none;
 		appearance: none;
 		border: none;
-		margin: 15px 0;
+		margin: 0 0 15px 0;
 		padding: 20px;
 		font-size: 20px;
 		line-height: 32px;
+		text-align: left;
 
 		&--textbox {
 			border: none;
@@ -27,6 +28,7 @@
 			font-size: 20px;
 			line-height: 32px;
 			resize: none;
+			text-align: left;
 		}
 
 		&--button {

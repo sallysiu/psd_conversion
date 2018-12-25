@@ -7,6 +7,10 @@
 
 	body {
 		text-align: center;
+
+		.blogpost {
+			text-align: left;
+		}
 	}
 
 	.behindLens {
@@ -101,6 +105,15 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+	.blog, 
+	.contact {
+		.landing-title {
+			font-size: 60px;
+			line-height: 45px;
+		}
+	}
+
 
 	h2.logo {
 		font-size: 36px;

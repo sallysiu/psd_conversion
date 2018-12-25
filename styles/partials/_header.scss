@@ -18,7 +18,7 @@ header {
 
 	h1 {
 		margin: 0 auto;
-		padding-top: 50vh;
+		padding-top: 36vh;
 
 	}
 	
@@ -45,13 +45,14 @@ header {
 	}
 	
 	&.main {
-		background: url(../../assets/image-1.jpg) no-repeat;
+		background: url(../assets/image-1.jpg) no-repeat;
+		background-size: cover;
 		height: 100vh;
 	}
 
 	&.blog,
 	&.contact {
-		background: url(../../assets/kelly-sikkema-250500-unsplash.jpg) right;
+		background: url(../assets/kelly-sikkema-250500-unsplash.jpg) right;
 		background-size: cover;
 		height: 50vh;
 		position: relative;
