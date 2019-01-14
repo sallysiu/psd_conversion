@@ -247,6 +247,7 @@ header {
     font-size: 42px;
     line-height: 63px; }
   header h1 {
+    text-align: center;
     margin: 0 auto;
     padding-top: 36vh; }
   header .logo {
@@ -304,6 +305,7 @@ nav ul li {
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   width: 100%;
+  border: 2px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,13 +325,6 @@ nav ul li {
   font-weight: normal; }
   .pages li a:hover, .pages li a:focus {
     border-bottom: 3px solid white; }
-
-header nav i.smallScreen {
-  padding: 0;
-  margin: 0;
-  text-align: right;
-  font-size: 40px;
-  display: none; }
 
 .socialMedia {
   position: absolute;
@@ -356,6 +351,75 @@ header nav i.smallScreen {
   height: 25px;
   margin: 0;
   margin-bottom: 15px; }
+
+/* nav code: */
+.wrapper-mobile {
+  position: relative;
+  /* relative allows us to use top right bottom left */
+  left: 0;
+  /* Set a default value of 0 so we can transition to -30% */
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /* magic to animate it */ }
+
+ul.mobile-nav {
+  background: #e7a8e6;
+  list-style: none;
+  /* Take bullets off */
+  padding: 0;
+  /* take padding off */
+  position: fixed;
+  z-index: 2;
+  width: 20%;
+  /*note how width and right are the same values*/
+  right: -20%;
+  /* Off the screen as wide as you are */
+  top: 70px;
+  margin: 0;
+  border-radius: 20px 0 0 20px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  /* magic to animate it */ }
+
+ul.mobile-nav a {
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  /*we also transition the background colour here*/ }
+
+ul.mobile-nav a:hover,
+ul.mobile-nav a:focus {
+  background: purple; }
+
+/*  When the input is checked
+  grab the next sibling nav with the + selector
+*/
+input#toggle:checked + ul.mobile-nav {
+  right: 0;
+  /*when the checkbox is checked, put the ul.nav back to right:0; It was at right:-30%;*/ }
+
+/* ~ means grab the next (and all of the) eventual sibling(s)*/
+input#toggle:checked ~ .wrapper-mobile {
+  left: -30%;
+  /*When the input is checked, slide the wrapper over as well */ }
+
+input#toggle {
+  display: none;
+  /*hide the input, we don't need to see it */ }
+
+label[for="toggle"] {
+  /*position the menu so that it doesn't slide off screen when we open it*/
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  color: white;
+  text-shadow: 1px 1px 5px purple;
+  display: none; }
 
 /* ABOUT */
 .about {

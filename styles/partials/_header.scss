@@ -17,6 +17,7 @@ header {
 	}
 
 	h1 {
+		text-align: center;
 		margin: 0 auto;
 		padding-top: 36vh;
 
@@ -48,6 +49,8 @@ header {
 		background: url(../assets/image-1.jpg) no-repeat;
 		background-size: cover;
 		height: 100vh;
+		// position: relative;
+
 	}
 
 	&.blog,

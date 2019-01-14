@@ -14,13 +14,36 @@
 </head>
 <body>
 	<header class="clearfix main">
-		<div class="wrapper">
+		<div class="wrapper" id="home">
+
+			
+
+
+
 			<div class="main-nav">
 				<h2 class="logo">
 					<a href="#">Shutter</a>
 				</h2>
+
+				<!-- The input needs to be beside the nav -->
+				<input type="checkbox" id="toggle" name="toggle">
+				<!-- These are siblings -->
+				<ul class="mobile-nav">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+					<!--
+										The label for attribute lines up with the input ID
+										When it is clicked, the browser (un)checks the associated checkbox
+									-->
+					<label for="toggle"><i class="fa fa-bars"></i> Menu</label>
+
+			
+
+				
 				<nav class="">
-					<i class="fas fa-bars smallScreen"></i>
 					<ul class="largeScreen">
 						<li><a href="" class="active">Home</a></li>
 						<li><a href="#about">About</a></li>
@@ -199,6 +222,8 @@
 	crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
 	<script src="scripts/script.js"></script>
+
+
 
 
 
