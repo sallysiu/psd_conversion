@@ -7,7 +7,8 @@ footer {
   
   div.wrapper {
     padding: 100px 0;
-    display: flex;
+		display: flex;
+		flex-direction: row;
     justify-content: space-around;
   }
 }
@@ -27,15 +28,16 @@ footer .contact,
   width: 15%;
 }
 
-.subscribe.smallScreen {
-	margin: 0 0 30px 0;
-	width: 100%;
-	display: none;
-}
 
 .subscribe {
 	width: 70%;
   text-align: center;
+}
+
+.subscribe.smallScreen {
+	margin: 0 0 30px 0;
+	width: 100%;
+	display: none;
 }
 
 
@@ -48,6 +50,10 @@ footer .contact,
 	text-align: left;
 	color: #232323;
 	padding: 0 10px;
+
+	&:focus {
+		border: 1.5px solid purple;
+	}
 }
 
 .subscribe input[type="submit"] {
@@ -59,6 +65,13 @@ footer .contact,
 	font-weight: bold;
 	line-height: 29px;
 	text-align: center;
+
+	&:hover,
+	&:focus {
+		background: purple;
+		color: white;
+		text-decoration: underline;
+	}
 }
 
 .subscribe.smallScreen input {
@@ -66,6 +79,9 @@ footer .contact,
 	text-align: center;
 }
 
+.contact {
+	text-align: left;
+}
 
 .pages {
 	text-align: right;

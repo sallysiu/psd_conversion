@@ -2,6 +2,34 @@
 
 /* RESPONSIVE DESIGN */
 
+@media (max-width: 1320px) {
+
+
+	.main-blog, .main-contact {
+		.wrapper {
+			flex-direction: column;
+
+			.blogpost,
+			.contact-form {
+				width: 100%;
+				order: -1;
+			}
+
+			.aside {
+				order: 2;
+				margin: 50px 0;
+				width: 100%;
+				text-align: center;
+
+				.img {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+
 /* Portrait tablet and small desktops */
 @media (max-width: 1240px) {
 
@@ -106,9 +134,24 @@
 		display: block;
 	}
 
-	footer .contact, .pages {
+	footer div.wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	footer .contact, 
+	footer .pages {
 		width: 50%;
 		text-align: center;
+	}
+
+	footer .pages li {
+		display: block;
+		margin: 0;
+
+		a {
+			padding: 0 10px;
+		}
 	}
 
 
@@ -193,287 +236,9 @@
 	}
 
 	
-}
-
-/* Landscape phones and down */
-@media (max-width: 500px) {
-
-	.wrapper {
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-	h2 {
-		font-size: 30px;
-	}
-
-	h2.logo {
-		font-size: 32px;
-	}
-	h3 {
-		font-size: 28px;
-	}
-
-	h4 {
-		font-size: 22px;
-	}
+};
 
 
-	span {
-		font-size: 75px;
-	}	
-	.gallery,
-	.gallery .wrapper {
-		width: 100%;
-		padding: 0;
-	}
-
-	.gallery ul li {
-		width: 50%;
-		margin: 0;
-	}
-
-	.options ul li {
-		width: 100%;
-		margin: 0 0 50px 0;
-		float: left;
-		text-align: center;
-	}
-
-	.options ul li:nth-of-type(4) {
-		margin-bottom: 0;
-	}
-
-
-	.behindLens div img {
-		width: 100%;
-	}
-
-	
-}
-
-@media (max-width: 1320px) {
-
-	.blog-post--content {
-		height: auto;
-
-	}
-
-}
-
-
-@media (max-width: 1210px) {
-	.header-main .title-box {
-		padding: 20px 0;
-		margin: 0 auto;
-
-			&__title {
-				width: 50%;
-
-				&--main {
-					font-size: 80px;
-					text-align: center;
-					margin: 0;
-					padding: 0;
-				
-				}
-				
-				&--image {
-					display: none;
-				}
-				.mobile {
-					display: block;
-				}
-			}
-
-
-		.willow-photo {
-			width: 30%;
-			margin: 40px;
-
-		}
-	}
-	
-	
-
-	
-	.blog {
-		.blog-post {
-			flex-direction: column;
-			flex-wrap: wrap;
-			align-content: center;
-			justify-content: center;
-
-			&--content {
-				width: 80%;
-				text-align: center;
-				margin: 50px 0 20px 0;
-				height: auto;
-				padding: 0;
-				&.favthings {
-					padding: 0;
-				}
-			}
-
-			&--photo {
-				position: static;
-				display: block;
-				flex: 0 1 auto;
-				margin: 30px 0;
-				background: none;
-				// border: 2px solid red;
-				width: auto;
-
-			}
-			&--photo.second {
-				background: none;
-				margin-top: 20px;
-				padding: 0;
-
-			}
-
-
-			&--background,
-			&--background.second {
-				position: static;
-				box-shadow: 20px 20px  #345231;
-				margin: 50px 0;
-
-				width: 100%;
-				// border: 2px solid black;
-				
-				&.--image {
-					width: 100%;;
-				}
-			}
-
-			
-
-		}
-	}
-
-
-
-
-
-
-	// other content pages
-
-	.main-blog, .main-contact {
-		.wrapper {
-			flex-direction: column;
-
-			.blogpost,
-			.contact-form {
-				width: 100%;
-				order: -1;
-			}
-
-			.aside {
-				order: 2;
-				margin: 50px 0;
-				width: 100%;
-				text-align: center;
-
-				.img {
-					width: 50%;
-				}
-			}
-		}
-	}
-
-	
-
-}
-
-
-
-@media (max-width: 850px) {
-	.header-main .title-box {
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.blog {
-		.blog-post {
-			&--photo {
-				position: static;
-				display: block;
-				flex: 0 1 auto;
-				margin: 30px 0;
-				background: none;
-				// border: 2px solid red;
-				width: 100%;
-			}
-
-			&--background--image {
-				height: 60%;
-
-			}
-		}
-	}
-
-
-	.willow-journey {
-
-		padding: 50px 0;
-		
-		.wrapper {
-			flex-direction: column;
-			align-content: flex-start;
-			justify-content: flex-start;
-			text-align: center;
-		}
-		&--photo {
-			width: 50%;
-		}
-		&--content {
-			margin: 50px 0;
-			padding: 0;
-			width: 100%;
-		}
-	}
-
-	.gallery {
-
-		.breaker {
-			height: 20vh;
-		}
-
-		&--list {
-			flex-direction: column;
-			justify-content: flex-start;
-			margin: 50px 0;
-			width: 100%;
-
-		}
-		&--li {
-			width: 100%;
-			margin: 20px 0;
-			img {
-				width: 100%;
-			}
-		}
-	}
-
-	.footer {
-		.wrapper {
-			flex-direction: column;
-			
-		}
-		&--section {
-			width: 100%;
-		}
-		
-	}
-
-
-}
-	
 @media (max-width: 700px) {
 
 	.wrapper {
@@ -581,7 +346,38 @@
 }
 
 
+
+/* Landscape phones and down */
 @media (max-width: 500px) {
+
+	.wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+
+	h2.logo {
+		font-size: 32px;
+	}
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 22px;
+	}
+
+
+	span {
+		font-size: 75px;
+	}	
+
 
 	header.blog,
 	header.contact {
@@ -592,9 +388,37 @@
 		}
 
 	}
+	
+	.gallery,
+	.gallery .wrapper {
+		width: 100%;
+		padding: 0;
+	}
+
+	.gallery ul li {
+		width: 50%;
+		margin: 0;
+	}
+
+	.options ul li {
+		width: 100%;
+		margin: 0 0 50px 0;
+		float: left;
+		text-align: center;
+	}
+
+	.options ul li:nth-of-type(4) {
+		margin-bottom: 0;
+	}
 
 
+	.behindLens div img {
+		width: 100%;
+	}
+
+	
 }
+
 
 
 @media (max-width: 430px) {
@@ -617,3 +441,5 @@
 	}
 
 }
+
+
