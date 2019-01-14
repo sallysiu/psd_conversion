@@ -8,7 +8,7 @@
 	body {
 		text-align: center;
 
-		.blogpost {
+		.blogpost, .aside {
 			text-align: left;
 		}
 	}
@@ -73,6 +73,17 @@
 		display: block;
 	}
 
+	header.blog,
+	header.contact {
+		height: 40vh;
+
+		.landing-title {
+			font-size: 80px;
+			line-height: 80px;
+		}
+
+	}
+
 	
 	.natureScenery div img, 
 	.candidPhoto div img {
@@ -106,12 +117,16 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-	.blog, 
-	.contact {
+
+	header.blog,
+	header.contact {
+		height: 40vh;
+
 		.landing-title {
 			font-size: 60px;
-			line-height: 45px;
+			line-height: 60px;
 		}
+
 	}
 
 
@@ -465,6 +480,17 @@
 		margin: 0 auto;
 	}
 
+	header.blog,
+	header.contact {
+		padding-top: 30px;
+
+		.landing-title {
+			left: 5%;
+		}
+
+	}
+
+
 	.nav__li--link {
 		display: none;
 	}
@@ -487,13 +513,6 @@
 		}
 	}
 
-	.header-blog, 
-	.header-contact {
-		.landing-title {
-			font-size: 60px;
-			line-height: 45px;
-		}
-	}
 
 	.blog {
 		padding: 50px 0;
@@ -559,6 +578,23 @@
 	}
 				
 }
+
+
+@media (max-width: 500px) {
+
+	header.blog,
+	header.contact {
+		.landing-title {
+			text-align: left;
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+	}
+
+
+}
+
 
 @media (max-width: 430px) {
 

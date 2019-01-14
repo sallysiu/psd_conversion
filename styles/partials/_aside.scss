@@ -80,15 +80,18 @@
 		margin-right: 15px;
 		font-size: 40px;
 
-	}
-
-	.icon {
-		color: indigo;
-		
-		&:hover {
-		color: rgb(255, 118, 253);
-		// color: #e7a8e6;
+		.icon {
+			color: purple;
 		}
+
+		a:focus, a:hover {
+			.icon {
+			   color: rgb(255, 118, 253);
+			   border-bottom: 2px solid rgb(255, 118, 253);
+		   }
+
+		}
+
 	}
 
 }
