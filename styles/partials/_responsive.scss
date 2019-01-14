@@ -69,9 +69,10 @@
 		display: none;
 	}
 
-	header nav i.smallScreen {
+	label[for="toggle"] {
 		display: block;
 	}
+
 
 	header.blog,
 	header.contact {
