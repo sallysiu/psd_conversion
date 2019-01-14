@@ -398,14 +398,6 @@ ul.mobile-nav a:focus {
 input#toggle:checked + ul.mobile-nav {
   display: block; }
 
-/* ~ means grab the next (and all of the) eventual sibling(s)*/
-input#toggle:checked ~ .wrapper-mobile {
-  display: block; }
-
-input#toggle {
-  display: none;
-  /*hide the input, we don't need to see it */ }
-
 label[for="toggle"] {
   position: fixed;
   top: 30px;
@@ -414,6 +406,9 @@ label[for="toggle"] {
   text-shadow: 1px 0px 2px purple;
   font-size: 40px;
   display: none; }
+  label[for="toggle"]:focus {
+    color: purple;
+    text-shadow: 1px 0px 2px white; }
 
 /* ABOUT */
 .about {
