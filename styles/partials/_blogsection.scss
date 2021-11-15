@@ -30,6 +30,10 @@
     flex-direction: column;
     align-self: center;
     padding: 0 100px;
+
+    p {
+      width: 60%;
+    }
   }
 }
 .gridPhotos {
@@ -42,13 +46,16 @@
   order: 1;
   text-align: right;
 
-  .findMore {
+  .findMore,
+  p {
     align-self: flex-end;
   }
 }
 
 .blogpost2 {
   order: 4;
+  align-items: flex-start;
+  text-align: left;
 
   .findMore {
     align-self: flex-start;
