@@ -1,52 +1,91 @@
-
 /* BEHIND THE LENS */
 
 .behindLens {
-	padding: 100px 0;
+  padding: 100px 0;
 }
 
 .behindLens div img {
-	display: block;
-	float: left;
-	width: 30%;
+  display: block;
+  float: left;
+  width: 30%;
 }
 
 .behindLens .wrapper div {
-	width: 70%;
-	float: left;
-	padding-left: 42px;
+  width: 70%;
+  float: left;
+  padding-left: 42px;
 }
-
-
 
 /* BLOG POSTS */
 
-.natureScenery, .candidPhoto {
-	clear: both;
-	width: 100%;
+.blogpostContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #f0f5ff;
+
+  .textContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 100px;
+  }
+}
+.gridPhotos {
+  display: block;
+  width: 50%;
+  object-fit: cover;
 }
 
-.natureScenery div img, .candidPhoto div img {
-	display: block;
-	width: 50%;
-	float: right;
+.blogpost1 {
+  order: 1;
+  text-align: right;
+
+  .findMore {
+    align-self: flex-end;
+  }
 }
 
-.natureScenery .blogpost, .candidPhoto .blogpost {
-	background: #f0f5ff;
-	width: 50%;
-	padding: 100px 148px 100px 12.5%;
-	text-align: right;
+.blogpost2 {
+  order: 4;
+
+  .findMore {
+    align-self: flex-start;
+  }
 }
 
-.candidPhoto div img {
-	float: left;
+.blogImage1 {
+  order: 2;
 }
 
-.candidPhoto .blogpost {
-	text-align: left;
-	float: right;
+.blogImage2 {
+  order: 3;
 }
 
+// .natureScenery, .candidPhoto {
+// 	clear: both;
+// 	width: 100%;
+// }
 
+// .natureScenery div img, .candidPhoto div img {
+// 	display: block;
+// 	width: 50%;
+// 	float: right;
+// }
 
+// .natureScenery .blogpost, .candidPhoto .blogpost {
+// 	background: #f0f5ff;
+// 	width: 50%;
+// 	padding: 100px 148px 100px 12.5%;
+// 	text-align: right;
+// }
+
+// .candidPhoto div img {
+// 	float: left;
+// }
+
+// .candidPhoto .blogpost {
+// 	text-align: left;
+// 	float: right;
+// }
