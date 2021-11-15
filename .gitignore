@@ -1,0 +1,12 @@
+
+/harthouse
+/psd-conversion
+/assets/stuff
+/assets/icons/ignore
+/intergalatic-visitors-system/
+
+node_modules
+.DS_Store
+*.pdf
+*.zip
+prepos-6.config
