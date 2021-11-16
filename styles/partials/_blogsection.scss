@@ -2,6 +2,7 @@
 
 .behindLens {
   padding: 100px 0;
+  background: white;
 }
 
 .behindLens div img {
@@ -70,29 +71,42 @@
   order: 3;
 }
 
-// .natureScenery, .candidPhoto {
-// 	clear: both;
-// 	width: 100%;
-// }
+@media (max-width: 1240px) {
+  .blogpostContainer {
+    flex-direction: column;
 
-// .natureScenery div img, .candidPhoto div img {
-// 	display: block;
-// 	width: 50%;
-// 	float: right;
-// }
+    .textContainer,
+    .gridPhotos {
+      width: 100%;
+    }
+    .textContainer {
+      text-align: center;
+      align-items: center;
+      padding: 50px;
 
-// .natureScenery .blogpost, .candidPhoto .blogpost {
-// 	background: #f0f5ff;
-// 	width: 50%;
-// 	padding: 100px 148px 100px 12.5%;
-// 	text-align: right;
-// }
+      p {
+        align-self: center;
+        width: 80%;
+      }
 
-// .candidPhoto div img {
-// 	float: left;
-// }
+      .findMore {
+        align-self: center;
+      }
+    }
+  }
 
-// .candidPhoto .blogpost {
-// 	text-align: left;
-// 	float: right;
-// }
+  .blogpost1 {
+    order: 2;
+  }
+
+  .blogImage1 {
+    order: 1;
+  }
+  .blogpost2 {
+    order: 4;
+  }
+
+  .blogImage2 {
+    order: 3;
+  }
+}

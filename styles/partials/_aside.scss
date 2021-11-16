@@ -1,98 +1,99 @@
 // Aside section for Blog and Contact pages
 
 .aside {
-	width: 30%;
-	display: flex;
-	flex-direction: column;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 
-	&__about {
-		padding: 20px;
-		background: white;
-		margin-bottom: 20px;
+  h4 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    margin-top: 15px;
+  }
 
-		&--link {
-			color:#709b6b; // grey green
-			font-weight: bolder;
+  p {
+    margin: 15px 0 30px;
+  }
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+  &__about {
+    padding: 30px;
+    background: white;
+    margin-bottom: 20px;
 
-	&__recent-posts {
-		padding: 20px;
-		background: white;
+    &--link {
+      color: #709b6b; // grey green
+      font-weight: bolder;
 
-		&--list {
-			font-family: 'Monserrat', sans-serif;
-			padding: 0;
-			margin: 0;
-			font-size: 20px;
-			line-height: 32px;
-			list-style: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
-			&--item:before {
-				content: "\0387";
-				padding: 0 10px;
-				display: inline;
-			
-			}
+  &__recent-posts {
+    padding: 20px;
+    background: white;
 
-		}
-		&--link {
-			color: black;
+    &--list {
+      font-family: "Monserrat", sans-serif;
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      line-height: 32px;
+      list-style: none;
 
-			&:hover  {
-				text-decoration: underline;
-			}
-		}
+      &--item:before {
+        content: "\0387";
+        padding: 0 10px;
+        display: inline;
+      }
+    }
+    &--link {
+      color: black;
 
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
-	}
+  &.contact {
+    background: white;
+    padding: 20px;
+    margin: 0;
+    height: fit-content;
 
-
-	&.contact {
-		background: white;
-		padding: 20px;
-		margin: 0;
-		height: 280px;
-	
-		.email {
-		font-weight: bold;
-		}
-		p {
-			margin: 5px 0;
-			line-height: 28px;
-			padding: 0;
-		}		
-
-	}
+    .email {
+      font-weight: bold;
+    }
+    p {
+      margin: 5px 0;
+      line-height: 28px;
+      padding: 0;
+    }
+  }
 }
 
 .contact-info {
-	// align-self: center;
-	list-style: none;
-	padding: 0;
-	margin-bottom: 20px;
-	&--li {
-		display: inline-block;
-		margin-right: 15px;
-		font-size: 40px;
+  // align-self: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  &--li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 40px;
 
-		.icon {
-			color: purple;
-		}
+    .icon {
+      color: purple;
+    }
 
-		a:focus, a:hover {
-			.icon {
-			   color: rgb(255, 118, 253);
-			   border-bottom: 2px solid rgb(255, 118, 253);
-		   }
-
-		}
-
-	}
-
+    a:focus,
+    a:hover {
+      .icon {
+        color: rgb(255, 118, 253);
+        border-bottom: 2px solid rgb(255, 118, 253);
+      }
+    }
+  }
 }
-	

@@ -1,79 +1,75 @@
 .main-blog,
 .main-contact {
-	background: #f0f5ff; //background: #f0f5ff;
+  background: #f0f5ff; //background: #f0f5ff;
 
-	.wrapper {
-		padding: 80px 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-content: center;
-	
-		.blogpost,
-		.contact-form {
-			flex: 0 1 auto;
-			width: 65%;
-			
-			&__content {
-				background: white;
-				padding: 20px;
-	
-				&--author {
-					padding: 0 0 10px 0;
-				}
+  .wrapper {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
 
-				// &--words {
-					// border: 1px solid  blue;
-					// padding: 0;
-				// }
-			}
+    .blogpost,
+    .contact-form {
+      flex: 0 1 auto;
+      width: 65%;
 
-			&__comments {
-				text-align: left;
-				margin-top: 50px; // to help separate comments from the blog post
+      &__content {
+        background: white;
+        padding: 30px;
 
-				&-box {
-					background: white;
-					padding: 20px;
-					margin: 30px 0;
-					display: flex;
-					flex-wrap: no-wrap;
-					justify-content: space-between;
-					align-items: flex-start;
-				}
-				&--photo {
-					flex: 0 1 auto;
-					width: 20%;
-				}
-				&--text {
-					flex: 0 1 auto;
-					margin: 0;
-					margin-left: 20px;
-					width: 80%;
+        &--author {
+          padding: 0 0 10px 0;
+        }
 
-					p:first-of-type {
-						margin: 0 0 20px 0;
-					}
+        // &--words {
+        // border: 1px solid  blue;
+        // padding: 0;
+        // }
+      }
 
-					p {
-						margin: 0;
-					}
-				}
-			}
+      &__comments {
+        text-align: left;
+        margin-top: 50px; // to help separate comments from the blog post
 
-			.border {
-				border-bottom: 10px solid purple;
+        &-box {
+          background: white;
+          padding: 30px;
+          margin: 30px 0;
+          display: flex;
+          flex-wrap: no-wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+        &--photo {
+          flex: 0 1 auto;
+          width: 15%;
+        }
+        &--text {
+          flex: 0 1 auto;
+          margin: 0;
+          margin-left: 20px;
+          width: 80%;
 
-			}
+          p:first-of-type {
+            margin: 0 0 20px 0;
+          }
 
-		}
+          p {
+            margin: 0;
+          }
+        }
+      }
 
-		.aside {
-			flex: 0 1 auto;
-			order: -1;
-		}
-		
-	}
+      .border {
+        border-bottom: 10px solid purple;
+      }
+    }
 
-	
+    .aside {
+      flex: 0 1 auto;
+      order: -1;
+    }
+  }
 }
