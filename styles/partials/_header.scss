@@ -1,90 +1,81 @@
-
-
 header {
-	background-size: cover;
-	color: #fcfcfc;
-	font-family: 'Lato', sans-serif;
-	padding-top: 20px;
+  background-size: cover;
+  color: #fcfcfc;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
 
-	h2 {
-		// float: left;
-		font-size: 3rem;
-		text-transform: uppercase;
-		color: #fcfcfc;
-		font-size: 42px;
-		line-height: 63px;
-		// border: 2px solid red;
-	}
+  h2 {
+    // float: left;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    font-size: 42px;
+    line-height: 63px;
+    // border: 2px solid red;
+  }
 
-	h1 {
-		text-align: center;
-		margin: 0 auto;
-		padding-top: 36vh;
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 36vh;
+  }
 
-	}
-	
+  .logo {
+    flex: 0 1 auto;
+    text-transform: none;
 
-	.logo {
-		flex: 0 1 auto;
-		text-transform: none;
-	}
+    a:hover,
+    a:focus {
+      border-bottom: 5px solid white;
+    }
+  }
 
-	
-	& .wrapper {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		// align-items: center;
-		// justify-content: center;
-		// justify-items: center;
-		// display: flex;
-		// flex-direction: row;
-		// align-content: flex-end;
-		// border: 2px solid green;
-		position: relative;
+  & .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: center;
+    // justify-content: center;
+    // justify-items: center;
+    // display: flex;
+    // flex-direction: row;
+    // align-content: flex-end;
+    // border: 2px solid green;
+    position: relative;
+  }
 
-	}
-	
-	&.main {
-		background: url(../assets/image-1.jpg) no-repeat;
-		background-size: cover;
-		height: 100vh;
-		// position: relative;
+  &.main {
+    background: url(../assets/image-1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    // position: relative;
+  }
 
-	}
+  &.blog,
+  &.contact {
+    background: url(../assets/kelly-sikkema-250500-unsplash.jpg) right;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
 
-	&.blog,
-	&.contact {
-		background: url(../assets/kelly-sikkema-250500-unsplash.jpg) right;
-		background-size: cover;
-		height: 50vh;
-		position: relative;
-		
-		.landing-title {
-			font-family: 'Playfair Display', serif;
-			padding: 0;
-			position: absolute;
-			bottom: 0;
-			left: 10%;
-			font-size: 100px;
-			line-height: 100px;
-			letter-spacing: 1px;
-		}
-	}
-
+    .landing-title {
+      font-family: "Playfair Display", serif;
+      padding: 0;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      font-size: 100px;
+      line-height: 100px;
+      letter-spacing: 1px;
+    }
+  }
 }
-
-
-
 
 span {
-	font-family: 'Playfair Display', serif;
-	font-size: 130px;
-	display: block;
-	text-transform: none;
-	padding: 0;
-	line-height: 0.7;
+  font-family: "Playfair Display", serif;
+  font-size: 130px;
+  display: block;
+  text-transform: none;
+  padding: 0;
+  line-height: 0.7;
 }
-
-
-

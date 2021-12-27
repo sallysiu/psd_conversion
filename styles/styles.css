@@ -314,6 +314,10 @@ header .logo {
           flex: 0 1 auto;
   text-transform: none;
 }
+header .logo a:hover,
+header .logo a:focus {
+  border-bottom: 5px solid white;
+}
 header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -383,8 +387,10 @@ nav ul li {
           flex: 0 1 auto;
 }
 .main-nav nav a {
-  padding: 0 10px 0 10px;
+  padding: 0 10px 3px 10px;
   letter-spacing: 1px;
+  line-height: 2px;
+  text-shadow: 0px 0px 7px black;
 }
 .main-nav nav a.active {
   border-bottom: 3px solid white;
@@ -1015,7 +1021,6 @@ footer .contact,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid green;
 }
 .subscribe form {
   display: -webkit-box;
