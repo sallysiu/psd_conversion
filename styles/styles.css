@@ -384,9 +384,13 @@ nav ul li {
 }
 .main-nav nav a {
   padding: 0 10px 0 10px;
+  letter-spacing: 1px;
 }
-.main-nav nav a.active, .main-nav nav a:hover, .main-nav nav a:focus {
+.main-nav nav a.active {
   border-bottom: 3px solid white;
+}
+.main-nav nav a:hover, .main-nav nav a:focus {
+  border-bottom: 5px solid white;
 }
 
 .pages li {
@@ -444,21 +448,25 @@ ul.mobile-nav {
   padding: 0;
   /* take padding off */
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 200px;
   /*note how width and right are the same values*/
   right: 0;
   /* Off the screen as wide as you are */
-  top: 90px;
+  top: 0px;
   margin: 0;
   border-radius: 20px 0 0 20px;
   display: none;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 ul.mobile-nav a {
+  border-bottom: 1px solid purple;
   display: block;
   font-size: 30px;
   padding: 20px;
+  letter-spacing: 0.6px;
 }
 
 ul.mobile-nav a:hover,
@@ -475,8 +483,9 @@ input#toggle:checked + ul.mobile-nav {
 
 label[for=toggle] {
   position: fixed;
+  z-index: 20;
   top: 30px;
-  right: 10%;
+  right: 5%;
   color: white;
   text-shadow: 1px 0px 2px purple;
   font-size: 40px;
@@ -999,6 +1008,19 @@ footer .contact,
 .subscribe {
   width: 70%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid green;
+}
+.subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .subscribe.smallScreen {

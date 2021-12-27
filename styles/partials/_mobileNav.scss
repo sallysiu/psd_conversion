@@ -1,58 +1,59 @@
-
- /* nav code: */
+/* nav code: */
 
 .wrapper-mobile {
-	position: relative; /* relative allows us to use top right bottom left */
-	left: 0; /* Set a default value of 0 so we can transition to -30% */
-	transition: all 0.5s; /* magic to animate it */
+  position: relative; /* relative allows us to use top right bottom left */
+  left: 0; /* Set a default value of 0 so we can transition to -30% */
+  transition: all 0.5s; /* magic to animate it */
 }
 
 ul.mobile-nav {
-	background: #e7a8e6;
-	list-style: none; /* Take bullets off */
-	padding: 0; /* take padding off */
-	position: fixed;
-	z-index: 2;
-	width: 200px; /*note how width and right are the same values*/
-	right: 0; /* Off the screen as wide as you are */
-	top: 90px;
-	margin: 0;
-	border-radius: 20px 0 0 20px;
-	display: none;
+  background: #e7a8e6;
+  list-style: none; /* Take bullets off */
+  padding: 0; /* take padding off */
+  position: fixed;
+  z-index: 10;
+  width: 200px; /*note how width and right are the same values*/
+  right: 0; /* Off the screen as wide as you are */
+  top: 0px;
+  margin: 0;
+  border-radius: 20px 0 0 20px;
+  display: none;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 ul.mobile-nav a {
-	// border-bottom: 1px solid purple;
-	display: block;
-	font-size: 30px;
-	padding: 20px;
+  border-bottom: 1px solid purple;
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+  letter-spacing: 0.6px;
 }
 
 ul.mobile-nav a:hover,
 ul.mobile-nav a:focus {
-	background: purple;
+  background: purple;
 }
 
 /*  When the input is checked
   grab the next sibling nav with the + selector
 */
 input#toggle:checked + ul.mobile-nav {
-	display: block;
+  display: block;
 }
 
-
-
 label[for="toggle"] {
-	position: fixed;
-	top: 30px;
-	right: 10%;
-	color: white;
-	text-shadow: 1px 0px 2px purple;
-	font-size: 40px;
-	display:none;
+  position: fixed;
+  z-index: 20;
+  top: 30px;
+  right: 5%;
+  color: white;
+  text-shadow: 1px 0px 2px purple;
+  font-size: 40px;
+  display: none;
 
-	&:focus {
-		color: purple;
-		text-shadow: 1px 0px 2px white;
-	}
+  &:focus {
+    color: purple;
+    text-shadow: 1px 0px 2px white;
+  }
 }
